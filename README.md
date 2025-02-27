@@ -5,7 +5,7 @@ The following file are included:
 
     SWaT_RESILIENCE_RESULTS.xlsx contains the resilience analysis made by applying the eigenvector centrality, betweenness centrality and WCC properties to the three SWaT designs;
     SWaT_*.png show the SWaT graphs built with Neo4j;
-    SWaT_EIG_P*_*.png show graphical eigenvector centrality results;
+    SWaT_EIG_P*_*.eps show graphical eigenvector centrality results;
     Chatbot_response.txt contains the response provided by the Neo4J CHatBot to the question mentionned in our article;
 
 If using this content for research purposes, please cite:
