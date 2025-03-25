@@ -1,0 +1,49 @@
+SWaT (Secure Water Treatment) is a six-stage water treatment testbed designed to mimic a real-world water treatment plant. It operates as a cyber-physical system, integrating physical components with cyber control systems to ensure efficient and secure water treatment. Here's a detailed explanation of how SWaT works, how its components are connected, and the data exchanged between them:
+How SWaT Works:
+
+    Stages of Water Treatment:
+        Stage 1: Raw water intake from a source (e.g., campus water line).
+        Stage 2: Chemical dosing to adjust water properties.
+        Stage 3: Filtration through an Ultrafiltration (UF) system to remove solid particles.
+        Stage 4: Dechlorination using UV lamps to eliminate chlorine.
+        Stage 5: Reverse osmosis to remove dissolved salts and impurities.
+        Stage 6: Storage and distribution of treated water.
+
+    Purpose:
+        SWaT is designed for research, experimentation, education, and training in cybersecurity and water treatment processes. It also supports testing of attack detection and defense mechanisms.
+
+Component Connections:
+
+    Physical Components:
+        Tanks, Pumps, Valves, and Sensors: These are the primary physical components that handle water flow, storage, and monitoring.
+        Actuators: Control the operation of pumps and valves based on commands from the PLCs.
+
+    Cyber Components:
+        PLCs (Programmable Logic Controllers): Each stage is autonomously controlled by a local PLC, which processes sensor data and sends commands to actuators.
+        SCADA (Supervisory Control and Data Acquisition): Monitors and controls the entire system, providing a user interface for operators.
+        Historian: Stores historical data for analysis and research purposes.
+
+    Network Structure:
+        Level 0 Network: Connects sensors and actuators to the PLCs. Sensors send real-time data (e.g., water level, flow rate, pressure, and quality) to the PLCs, while actuators receive control signals from the PLCs.
+        Level 1 Network: Connects the PLCs to the SCADA system and historian. PLCs send processed data (e.g., operational status, alarms, and performance metrics) to the SCADA system, which visualizes the data for operators. The historian receives and stores this data for long-term analysis.
+
+Data Exchange:
+
+    Sensors to PLCs:
+        Sensors continuously send real-time data such as water levels, flow rates, pressure, and chemical concentrations to the PLCs.
+
+    PLCs to Actuators:
+        Based on the sensor data and programmed logic, PLCs send control signals to actuators to adjust pump speeds, open/close valves, or activate UV lamps.
+
+    PLCs to SCADA:
+        PLCs transmit operational data, including system status, alarms, and performance metrics, to the SCADA system for monitoring and control.
+
+    SCADA to Historian:
+        SCADA forwards data to the historian for storage, enabling analysis of system performance, detection of anomalies, and research on attack scenarios.
+
+    SCADA to Operators:
+        SCADA provides a graphical interface for operators to monitor the system, issue commands, and respond to alarms.
+
+Summary:
+
+SWaT integrates physical and cyber components to simulate a real-world water treatment process. Sensors collect data on water quality and system performance, which is processed by PLCs to control actuators. The SCADA system monitors and controls the entire process, while the historian stores data for analysis. This interconnected system enables research on cybersecurity, system resilience, and operational efficiency.
