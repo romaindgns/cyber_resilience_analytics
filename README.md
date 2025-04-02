@@ -11,6 +11,24 @@ The following file are included:
     - "Figures Neo4j bloom.zip" contains graph figures exported from Neo4j after applied the eigenvector centrality, betweenness centrality and weakly connected components to each of the three SWaT designs
     - "SWaT_EIG.mlx" is the script for generating the figures in "Figures - SWaT resilience assessment.zip"
 
-If using this content for research purposes, please cite:
 
-Romain Dagnas, Michel Barbeau, Joaquin Garcia-Alfaro and Reda Yaich. Graph Analytics for Cyber-Physical System Resilience Quantification.
+## References
+
+If using this code for research purposes, please cite:
+
+Romain Dagnas, Michel Barbeau, Joaquin Garcia-Alfaro and Reda Yaich. Graph Analytics for Cyber-Physical System Resilience Quantification, 2025.
+
+```
+@misc{dagnas2025GraphAnalyticsCPS,
+  title={Graph Analytics for Cyber-Physical System Resilience Quantification},
+  author={Dagnas, Romain and Barbeau, Michel and Garcia-Alfaro, Joaquin and Yaich, Reda},
+  pages={1--32},
+  year={2025},
+  month={April},
+  eprint={},
+  archivePrefix={},
+  primaryClass={},
+  url={},
+  note={to appear}, 
+}
+```
